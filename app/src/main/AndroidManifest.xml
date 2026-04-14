@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="100"
+    android:versionName="4.3.8"
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    platformBuildVersionName="13"
+    platformBuildVersionCode="33"
+    package="com.magicmagnet">
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="25"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+    <permission
+        android:name="com.magicmagnet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.magicmagnet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name="MyWrapperProxyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:resizeableActivity="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity
+            android:theme="@style/Main"
+            android:name="com.magicmagnet.main.view.MainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/title_activity_settings"
+            android:name="com.magicmagnet.setting.SettingsActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.setting.SettingActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|locale"/>
+        <activity
+            android:theme="@style/Splash"
+            android:name="com.magicmagnet.common.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.search.view.SearchActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.main.view.ParseActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.main.view.XActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="thunder"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ed2k"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ftp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="xunleiapp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="magnet"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*.torrent"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:mimeType="application/x-bittorrent"
+                    android:scheme="file"
+                    android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="content"
+                    android:host="*"
+                    android:pathPattern=".*.torrent"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:mimeType="application/x-bittorrent"
+                    android:scheme="content"
+                    android:host="*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.search.view.RandomActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.search.view.ResourceActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.search.view.SingleSourceMoreSearchActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/PlayerActivityTheme"
+            android:name="com.magicmagnet.play.PlayActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/CustomTheme_Dialog"
+            android:name="me.weyye.hipermission.PermissionActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.search.view.BrowserActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.bookmark.BookMarkActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.dlna.control.DLNAControlActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.filmreview.view.FilmReviewActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.search.view.AnimeSearchActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.favorite.view.CollectionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.searchsource.SearchSourceListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.common.activity.PhotoViewActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.filmreview.view.FilmReviewListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.filmreview.view.KYVideoListActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.goods.GoodsActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.searchsource.EditSearchSourceActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.mserver.view.LoginActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.mserver.view.RegisterActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.mserver.view.ModifyPasswordActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.mserver.view.UserActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.history.view.HistoryActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.mserver.view.ResetPwdActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.feedback.FeedbackActivity"
+            android:configChanges="screenSize|orientation|keyboard"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.dlna.search.DLNASearchActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AppTheme.SlidrActivity"
+            android:name="com.magicmagnet.dlna.search.DLNAWebPlayActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58d89321f43e486e6c001ae3"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="NotDefined"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e84a6b09e852f903637facd6f6ff2118ea3c9727"/>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+        <provider
+            android:name="com.magicmagnet.common.provider.BuglyProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.fileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider
+            android:name="com.magicmagnet.common.provider.GDTProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/gdt_file_path"/>
+        </provider>
+        <provider
+            android:name="com.magicmagnet.common.provider.UpgradeProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.upgradeProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/upgrade_file_path"/>
+        </provider>
+        <receiver android:name="com.magicmagnet.common.service.XService$CancelReceiver"/>
+        <receiver android:name="com.excuseme.ExcuseMe"/>
+        <receiver android:name="com.magicmagnet.common.service.DLNAService$CancelDLNAReceiver"/>
+        <service android:name="com.magicmagnet.common.service.XService"/>
+        <service android:name="com.magicmagnet.common.service.DLNAService"/>
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true"/>
+        <meta-data
+            android:name="firebase_performance_collection_enabled"
+            android:value="true"/>
+        <meta-data
+            android:name="com.samsung.android.keepalive.density"
+            android:value="true"/>
+        <meta-data
+            android:name="com.samsung.android.multidisplay.keep_process_alive"
+            android:value="true"/>
+        <provider
+            android:name="com.google.firebase.perf.provider.FirebasePerfProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.firebaseperfprovider"
+            android:initOrder="101"/>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider
+            android:name="com.linsh.utilseverywhere.FileProviderUtils$UEFileProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.file.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/ue_provider_paths"/>
+        </provider>
+        <service
+            android:name="org.chromium.customtabsclient.KeepAliveService"
+            android:exported="true"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true"/>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false"/>
+        <activity android:name="com.tencent.bugly.beta.ui.BetaActiveAlertActivity"/>
+        <provider
+            android:name="com.tencent.bugly.beta.utils.BuglyFileProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.fileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <service
+            android:name="com.tencent.bugly.beta.tinker.TinkerResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchForeService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":patch"/>
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":patch"/>
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService"
+            android:exported="false"
+            android:process=":patch"/>
+        <service
+            android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.oasisfeng.condom.version"
+            android:value="2.2.0.20180109"/>
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.com.squareup.picasso"/>
+        <provider
+            android:name="com.liulishuo.okdownload.OkDownloadProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.com.liulishuo.okdownload"/>
+        <activity
+            android:theme="@style/zxing_CaptureTheme"
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.magicmagnet.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T"
+            android:launchMode="singleInstance"/>
+        <meta-data
+            android:name="tinker_version"
+            android:value="1.9.14.17"/>
+    </application>
+</manifest>

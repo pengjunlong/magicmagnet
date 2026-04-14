@@ -1,0 +1,37 @@
+package com.google.common.util.concurrent;
+
+import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtIncompatible;
+import com.google.errorprone.annotations.CanIgnoreReturnValue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+
+@Beta
+@ElementTypesAreNonnullByDefault
+@GwtIncompatible
+@CanIgnoreReturnValue
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_1.dex */
+public final class FakeTimeLimiter implements TimeLimiter {
+    @Override // com.google.common.util.concurrent.TimeLimiter
+    @ParametricNullness
+    public <T> T callUninterruptiblyWithTimeout(Callable<T> callable, long j, TimeUnit timeUnit) throws ExecutionException {
+    }
+
+    @Override // com.google.common.util.concurrent.TimeLimiter
+    @ParametricNullness
+    public <T> T callWithTimeout(Callable<T> callable, long j, TimeUnit timeUnit) throws ExecutionException {
+    }
+
+    @Override // com.google.common.util.concurrent.TimeLimiter
+    public <T> T newProxy(T t, Class<T> cls, long j, TimeUnit timeUnit) {
+    }
+
+    @Override // com.google.common.util.concurrent.TimeLimiter
+    public void runUninterruptiblyWithTimeout(Runnable runnable, long j, TimeUnit timeUnit) {
+    }
+
+    @Override // com.google.common.util.concurrent.TimeLimiter
+    public void runWithTimeout(Runnable runnable, long j, TimeUnit timeUnit) {
+    }
+}

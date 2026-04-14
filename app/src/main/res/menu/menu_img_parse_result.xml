@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/play_build_in"
+        android:id="@+id/item_preview_img"
+        android:title="@string/preview_img"/>
+    <item
+        android:icon="@drawable/adm"
+        android:id="@+id/item_adm"
+        android:title="@string/download_local"/>
+</menu>

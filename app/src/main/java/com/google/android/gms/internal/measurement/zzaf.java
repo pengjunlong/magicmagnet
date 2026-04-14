@@ -1,0 +1,45 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.Iterator;
+import java.util.List;
+
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_0.dex */
+public final class zzaf implements zzap {
+    private final boolean zza;
+
+    public zzaf(Boolean bool) {
+    }
+
+    public final boolean equals(Object obj) {
+    }
+
+    public final int hashCode() {
+    }
+
+    public final String toString() {
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzap
+    public final zzap zzbK(String str, zzg zzgVar, List<zzap> list) {
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzap
+    public final String zzc() {
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzap
+    public final Double zzd() {
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzap
+    public final Boolean zze() {
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzap
+    public final Iterator<zzap> zzf() {
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzap
+    public final zzap zzt() {
+    }
+}

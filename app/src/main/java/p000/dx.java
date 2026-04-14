@@ -1,0 +1,16 @@
+package p000;
+
+import org.json.JSONObject;
+
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_2.dex */
+public final /* synthetic */ class dx implements oh {
+    public final /* synthetic */ JSONObject bpdqqiQNVROMLC1ll1l1l11;
+    public final /* synthetic */ xx dpbdpqRKAscW1lll1l;
+
+    public /* synthetic */ dx(xx xxVar, JSONObject jSONObject) {
+    }
+
+    @Override // p000.oh
+    public final Object call(Object obj) {
+    }
+}

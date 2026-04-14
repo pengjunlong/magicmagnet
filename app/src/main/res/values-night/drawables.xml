@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_about_setting">@drawable/ic_about_white</drawable>
+    <drawable name="ic_add_setting">@drawable/ic_add_white</drawable>
+    <drawable name="ic_battery_setting">@drawable/ic_battery_white</drawable>
+    <drawable name="ic_bind_pro_code">@drawable/ic_album_white</drawable>
+    <drawable name="ic_browser_setting">@drawable/ic_browser_white</drawable>
+    <drawable name="ic_codec_setting">@drawable/ic_version_white</drawable>
+    <drawable name="ic_copy_setting">@drawable/ic_copy_white</drawable>
+    <drawable name="ic_dlna_mode_setting">@drawable/ic_dlna_white</drawable>
+    <drawable name="ic_folder_setting">@drawable/ic_folder_white</drawable>
+    <drawable name="ic_get_pro">@drawable/ic_get_pro_white</drawable>
+    <drawable name="ic_help_setting">@drawable/ic_help_white</drawable>
+    <drawable name="ic_history_setting">@drawable/ic_history_white</drawable>
+    <drawable name="ic_list_setting">@drawable/ic_list_white</drawable>
+    <drawable name="ic_mail_setting">@drawable/ic_mail_white</drawable>
+    <drawable name="ic_menu_help">@drawable/ic_help_white</drawable>
+    <drawable name="ic_night_setting">@drawable/ic_night_white</drawable>
+    <drawable name="ic_player_setting">@drawable/ic_player_white</drawable>
+    <drawable name="ic_search_outside">@drawable/ic_version_white</drawable>
+    <drawable name="ic_select_all_menu">@drawable/ic_select_all_white</drawable>
+    <drawable name="ic_setting_rotate">@drawable/ic_setting_rotate_white</drawable>
+    <drawable name="ic_star_film_review">@drawable/ic_star_film_review_white</drawable>
+    <drawable name="ic_update_setting">@drawable/ic_update_white</drawable>
+    <drawable name="ic_version_setting">@drawable/ic_version_white</drawable>
+    <drawable name="ic_video_card_download">@drawable/ic_download_white</drawable>
+    <drawable name="ic_video_card_option">@drawable/ic_video_card_option_white</drawable>
+    <drawable name="ic_vidoe_card_share">@drawable/ic_share_white</drawable>
+    <drawable name="ic_website_setting">@drawable/ic_website_white</drawable>
+</resources>

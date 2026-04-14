@@ -1,0 +1,66 @@
+package com.magicmagnet.data.user;
+
+import p000.xc0;
+
+@xc0
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_1.dex */
+public final class ParseRequestV2 extends BaseRequest {
+    private final int connectedResource;
+    private final String from;
+    private final String link;
+    private final long size;
+    private final long speed;
+    private final String title;
+    private final int totalResource;
+    private final TYPE type;
+
+    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* JADX WARN: Unexpected branching in enum static init block */
+    @xc0
+    public static final class TYPE {
+        private static final /* synthetic */ TYPE[] $VALUES = null;
+        public static final TYPE ED2K = null;
+        public static final TYPE FTP = null;
+        public static final TYPE MAGNET = null;
+        public static final TYPE OTHER = null;
+
+        private static final /* synthetic */ TYPE[] $values() {
+        }
+
+        private TYPE(String str, int i) {
+        }
+
+        public static TYPE valueOf(String str) {
+        }
+
+        public static TYPE[] values() {
+        }
+    }
+
+    public ParseRequestV2(String str, String str2, TYPE type, String str3, int i, int i2, long j, long j2) {
+    }
+
+    public final int getConnectedResource() {
+    }
+
+    public final String getFrom() {
+    }
+
+    public final String getLink() {
+    }
+
+    public final long getSize() {
+    }
+
+    public final long getSpeed() {
+    }
+
+    public final String getTitle() {
+    }
+
+    public final int getTotalResource() {
+    }
+
+    public final TYPE getType() {
+    }
+}

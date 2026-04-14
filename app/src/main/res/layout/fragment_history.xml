@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_container"
+        android:background="@color/container_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fastScrollEnableThumbInactiveColor="true"
+            app:fastScrollThumbColor="@color/scroll_bar_press"
+            app:fastScrollThumbEnabled="true"
+            app:fastScrollThumbInactiveColor="@color/scroll_bar_unpress"
+            app:fastScrollTrackColor="@color/scroll_bar_background"/>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tvEmpty"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

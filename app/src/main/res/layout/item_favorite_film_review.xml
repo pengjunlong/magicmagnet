@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    app:cardBackgroundColor="@color/cardview_background"
+    app:cardCornerRadius="4dp"
+    app:cardPreventCornerOverlap="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.othershe.library.NiceImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            app:corner_radius="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14sp"
+            android:textColor="@color/font_like_gray"
+            android:ellipsize="end"
+            android:id="@+id/tv_film_review_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:maxLines="2"
+            android:fontFamily="@font/fz"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:autoSizeMaxTextSize="14sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeTextType="uniform"
+            app:fontFamily="@font/fz_bold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

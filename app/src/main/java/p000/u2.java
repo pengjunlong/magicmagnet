@@ -1,0 +1,29 @@
+package p000;
+
+import java.util.List;
+import java.util.Map;
+
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_1.dex */
+public interface u2 {
+    void bpdqqiQNVROMLC1ll1l1l11(l3 l3Var, int i, int i2, Map<String, List<String>> map);
+
+    void dbppbdqpeLmcbs11l11(l3 l3Var, int i, long j);
+
+    void dbpqdHhmDSIHIJiwc1ll1l1(l3 l3Var);
+
+    void ddbbbeXHXx111ll(l3 l3Var, Map<String, List<String>> map);
+
+    void dpbdbdpbLwkLpObyKsq1lll1(l3 l3Var, i8 i8Var, Exception exc);
+
+    void dpbdpqRKAscW1lll1l(l3 l3Var, dbqdqqzTNQqgVicdll11111ll dbqdqqztnqqgvicdll11111ll, x71 x71Var);
+
+    void dqpdbEevAufTOvPphbjykClll1l11(l3 l3Var, int i, long j);
+
+    void dqpqqqbqQyjyB11111l1(l3 l3Var, int i, long j);
+
+    void dqqppqiKzJi1l1lll1l(l3 l3Var, int i, Map<String, List<String>> map);
+
+    void pbppbpqbamJRy11l1l1(l3 l3Var, int i, Map<String, List<String>> map);
+
+    void ppbdpwWWljzmXXdHNabfWhgjl111l11(l3 l3Var, dbqdqqzTNQqgVicdll11111ll dbqdqqztnqqgvicdll11111ll);
+}

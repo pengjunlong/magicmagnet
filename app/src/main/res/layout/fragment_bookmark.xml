@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    android:background="@color/container_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+        android:id="@+id/rcv_bookmark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/tag_bg"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="22dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="添加"
+        android:drawableLeft="@drawable/ic_add_bookmark"
+        android:drawableStart="@drawable/ic_add_bookmark"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="end|bottom"
+        android:id="@+id/fab"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_bookmark"
+        app:backgroundTint="@color/yellow"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp"/>
+</FrameLayout>

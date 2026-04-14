@@ -1,0 +1,8 @@
+package com.google.android.gms.measurement.sdk.api;
+
+/* renamed from: com.google.android.gms.measurement.sdk.api.R */
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_0.dex */
+public final class C0249R {
+    private C0249R() {
+    }
+}

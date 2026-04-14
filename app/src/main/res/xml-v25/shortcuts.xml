@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/ic_shortcut_bookmark"
+        android:enabled="true"
+        android:shortcutId="bookmark"
+        android:shortcutShortLabel="@string/bookmark"
+        android:shortcutLongLabel="@string/bookmark">
+        <intent
+            android:targetPackage="com.magicmagnet"
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.magicmagnet.bookmark.BookMarkActivity"/>
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/ic_shortcut_collection"
+        android:enabled="true"
+        android:shortcutId="collection"
+        android:shortcutShortLabel="@string/collection"
+        android:shortcutLongLabel="@string/collection">
+        <intent
+            android:targetPackage="com.magicmagnet"
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.magicmagnet.favorite.view.CollectionActivity"/>
+    </shortcut>
+</shortcuts>

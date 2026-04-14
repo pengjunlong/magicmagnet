@@ -1,0 +1,10 @@
+package org.apache.xerces.xni.parser;
+
+import org.apache.xerces.xni.XMLDTDHandler;
+
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_2.dex */
+public interface XMLDTDSource {
+    XMLDTDHandler getDTDHandler();
+
+    void setDTDHandler(XMLDTDHandler xMLDTDHandler);
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/play_build_in"
+        android:id="@+id/item_play_build_in"
+        android:title="@string/play_build_in"/>
+    <item
+        android:icon="@drawable/play"
+        android:id="@+id/item_mx"
+        android:title="@string/just_play"/>
+    <item
+        android:icon="@drawable/aria2"
+        android:id="@+id/item_push_to_aria2"
+        android:title="@string/push_to_aria2"/>
+    <item
+        android:icon="@drawable/icon_flud"
+        android:id="@+id/item_save_torrent"
+        android:title="保存种子文件"/>
+</menu>

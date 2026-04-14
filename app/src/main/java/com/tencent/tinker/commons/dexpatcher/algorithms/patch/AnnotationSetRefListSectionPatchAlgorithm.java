@@ -1,0 +1,63 @@
+package com.tencent.tinker.commons.dexpatcher.algorithms.patch;
+
+import com.tencent.tinker.android.dex.AnnotationSetRefList;
+import com.tencent.tinker.android.dex.Dex;
+import com.tencent.tinker.android.dex.TableOfContents;
+import com.tencent.tinker.android.dex.io.DexDataBuffer;
+import com.tencent.tinker.commons.dexpatcher.struct.DexPatchFile;
+import com.tencent.tinker.commons.dexpatcher.util.AbstractIndexMap;
+import com.tencent.tinker.commons.dexpatcher.util.SparseIndexMap;
+
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_2.dex */
+public class AnnotationSetRefListSectionPatchAlgorithm extends DexSectionPatchAlgorithm<AnnotationSetRefList> {
+    private Dex.Section patchedAnnotationSetRefListSec;
+    private TableOfContents.Section patchedAnnotationSetRefListTocSec;
+
+    public AnnotationSetRefListSectionPatchAlgorithm(DexPatchFile dexPatchFile, Dex dex, Dex dex2, SparseIndexMap sparseIndexMap) {
+    }
+
+    @Override // com.tencent.tinker.commons.dexpatcher.algorithms.patch.DexSectionPatchAlgorithm
+    protected /* bridge */ /* synthetic */ AnnotationSetRefList adjustItem(AbstractIndexMap abstractIndexMap, AnnotationSetRefList annotationSetRefList) {
+    }
+
+    @Override // com.tencent.tinker.commons.dexpatcher.algorithms.patch.DexSectionPatchAlgorithm
+    protected /* bridge */ /* synthetic */ int getItemSize(AnnotationSetRefList annotationSetRefList) {
+    }
+
+    @Override // com.tencent.tinker.commons.dexpatcher.algorithms.patch.DexSectionPatchAlgorithm
+    protected TableOfContents.Section getTocSection(Dex dex) {
+    }
+
+    @Override // com.tencent.tinker.commons.dexpatcher.algorithms.patch.DexSectionPatchAlgorithm
+    protected void markDeletedIndexOrOffset(SparseIndexMap sparseIndexMap, int i, int i2) {
+    }
+
+    @Override // com.tencent.tinker.commons.dexpatcher.algorithms.patch.DexSectionPatchAlgorithm
+    protected /* bridge */ /* synthetic */ AnnotationSetRefList nextItem(DexDataBuffer dexDataBuffer) {
+    }
+
+    @Override // com.tencent.tinker.commons.dexpatcher.algorithms.patch.DexSectionPatchAlgorithm
+    protected void updateIndexOrOffset(SparseIndexMap sparseIndexMap, int i, int i2, int i3, int i4) {
+    }
+
+    @Override // com.tencent.tinker.commons.dexpatcher.algorithms.patch.DexSectionPatchAlgorithm
+    protected /* bridge */ /* synthetic */ int writePatchedItem(AnnotationSetRefList annotationSetRefList) {
+    }
+
+    /* renamed from: adjustItem, reason: avoid collision after fix types in other method */
+    protected AnnotationSetRefList adjustItem2(AbstractIndexMap abstractIndexMap, AnnotationSetRefList annotationSetRefList) {
+    }
+
+    /* renamed from: getItemSize, reason: avoid collision after fix types in other method */
+    protected int getItemSize2(AnnotationSetRefList annotationSetRefList) {
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // com.tencent.tinker.commons.dexpatcher.algorithms.patch.DexSectionPatchAlgorithm
+    protected AnnotationSetRefList nextItem(DexDataBuffer dexDataBuffer) {
+    }
+
+    /* renamed from: writePatchedItem, reason: avoid collision after fix types in other method */
+    protected int writePatchedItem2(AnnotationSetRefList annotationSetRefList) {
+    }
+}

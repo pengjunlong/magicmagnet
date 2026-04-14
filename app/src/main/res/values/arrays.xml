@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="aria2_servers">
+    </array>
+    <array name="aria2_servers_value">
+    </array>
+    <array name="concurrent_titles">
+        <item>2</item>
+        <item>4(推荐)</item>
+        <item>6</item>
+        <item>8</item>
+    </array>
+    <array name="concurrent_values">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+    </array>
+    <array name="dlna_mode">
+        <item>方式1（推荐）</item>
+        <item>方式2</item>
+    </array>
+    <array name="dlna_mode_values">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="empty">
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="fragment_adblock_general_locale_title">
+        <item>af|Afrikaans</item>
+        <item>am|ኣማርኛ</item>
+        <item>ar|العربية</item>
+        <item>as|অসমীয়া</item>
+        <item>ast|Asturianu</item>
+        <item>az|Azərbaycan</item>
+        <item>be|Беларуская мова</item>
+        <item>bg|български</item>
+        <item>bn|বাংলা (ভারত)</item>
+        <item>br|ar brezhoneg</item>
+        <item>bs|bosanski</item>
+        <item>ca|català</item>
+        <item>cs|čeština</item>
+        <item>cy|Cymraeg</item>
+        <item>da|dansk</item>
+        <item>de|Deutsch</item>
+        <item>dsb|dolnoserbski</item>
+        <item>el|ελληνικά</item>
+        <item>en|English</item>
+        <item>eo|Esperanto</item>
+        <item>es|español</item>
+        <item>et|eesti keel</item>
+        <item>eu|euskara</item>
+        <item>fa|فارسى</item>
+        <item>fi|suomi</item>
+        <item>fil|Filipino</item>
+        <item>fr|français</item>
+        <item>fy|Frysk</item>
+        <item>gl|Galego</item>
+        <item>gu|ગુજરાતી (ભારત)</item>
+        <item>he|עברית</item>
+        <item>hi|हिन्दी</item>
+        <item>hr|Hrvatski</item>
+        <item>hsb|hornjoserbsce</item>
+        <item>hu|magyar</item>
+        <item>hy|Հայերեն</item>
+        <item>id|Bahasa Indonesia</item>
+        <item>is|Íslenska</item>
+        <item>it|italiano</item>
+        <item>ja|日本語</item>
+        <item>ka|ქართული</item>
+        <item>kab|Taqbaylit</item>
+        <item>kk|Қазақ тілі</item>
+        <item>kn|ಕನ್ನಡ</item>
+        <item>ko|한국어</item>
+        <item>lt|lietuvių kalba</item>
+        <item>lv|latviešu valoda</item>
+        <item>mg|Malagasy</item>
+        <item>mk|македонски</item>
+        <item>ml|മലയാളം</item>
+        <item>ms|Melayu</item>
+        <item>nb|norsk</item>
+        <item>nl|Nederlands</item>
+        <item>nn|norsk</item>
+        <item>pa|ਪੰਜਾਬੀ (ਭਾਰਤ)</item>
+        <item>pl|polski</item>
+        <item>pt|português</item>
+        <item>rm|rumantsch</item>
+        <item>ro|română</item>
+        <item>ru|Русский</item>
+        <item>si|සිංහල</item>
+        <item>sk|slovenčina</item>
+        <item>sl|slovenščina</item>
+        <item>sq|shqip</item>
+        <item>sr|српски</item>
+        <item>sv|svenska</item>
+        <item>sw|Kiswahili</item>
+        <item>ta|தமிழ்</item>
+        <item>te|తెలుగు</item>
+        <item>th|ภาษาไทย</item>
+        <item>tr|Türkçe</item>
+        <item>uk|українська</item>
+        <item>ur|اردو</item>
+        <item>uz|o’zbek</item>
+        <item>vi|Tiếng Việt</item>
+        <item>zh|中文</item>
+    </array>
+    <array name="key_player_list">
+        <item>ijk(默认)</item>
+        <item>exoplayer</item>
+        <item>系统解码器</item>
+    </array>
+    <array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </array>
+    <array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="multi_select_list_preference_default_value">
+    </array>
+    <array name="night_mode_titles">
+        <item>开启</item>
+        <item>关闭</item>
+        <item>跟随系统</item>
+    </array>
+    <array name="night_mode_values">
+        <item>on</item>
+        <item>off</item>
+        <item>system</item>
+    </array>
+    <array name="permissionNames">
+        <item>@string/permission_storage</item>
+        <item>@string/permission_location</item>
+        <item>@string/permission_camera</item>
+    </array>
+    <array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </array>
+    <array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </array>
+    <array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </array>
+    <array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </array>
+    <array name="source_key">
+        <item>MP4BA</item>
+        <item>DYTT</item>
+        <item>6V</item>
+        <item>GaoQing.Fm</item>
+        <item>DY</item>
+        <item>CILI001</item>
+        <item>DMHY</item>
+        <item>BTSO.PW</item>
+        <item>BTHUB</item>
+        <item>ZZSO</item>
+        <item>DSSO</item>
+        <item>BTKITTY</item>
+        <item>NMSo</item>
+        <item>CILIBA</item>
+    </array>
+    <array name="source_value">
+        <item>mp4ba</item>
+        <item>dytt</item>
+        <item>6v</item>
+        <item>gao_qing_fm</item>
+        <item>dy</item>
+        <item>dmhy</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+        <item>cbcb</item>
+    </array>
+    <array name="value_player_list">
+        <item>ijk</item>
+        <item>exo</item>
+        <item>system</item>
+    </array>
+</resources>

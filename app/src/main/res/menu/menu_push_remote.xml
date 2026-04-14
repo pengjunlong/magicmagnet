@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_edit"
+        android:id="@+id/item_edit"
+        android:title="编辑"/>
+    <item
+        android:icon="@drawable/ic_delete"
+        android:id="@+id/item_delete"
+        android:title="删除"/>
+    <item
+        android:icon="@drawable/push_to_aria2_remote"
+        android:id="@+id/item_push_to_aria2"
+        android:title="@string/aria2"/>
+    <item
+        android:icon="@drawable/ic_xiaomi"
+        android:id="@+id/item_push_to_xiaomi_router"
+        android:title="@string/push_to_xiaomi_router"/>
+    <item
+        android:icon="@drawable/icon_xiazaibao"
+        android:id="@+id/item_push_toxiazaobao"
+        android:title="@string/push_to_xiazaibao"/>
+    <item
+        android:icon="@drawable/ic_cloud_torrent"
+        android:id="@+id/item_push_to_cloud_torrent"
+        android:visible="false"
+        android:title="@string/push_to_cloud_torrent"/>
+    <item
+        android:icon="@drawable/wky"
+        android:id="@+id/item_push_to_wky"
+        android:title="@string/push_to_wky"/>
+    <item
+        android:icon="@drawable/icon_flud"
+        android:id="@+id/item_save_torrent"
+        android:title="保存种子文件"/>
+</menu>

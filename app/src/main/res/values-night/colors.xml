@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_search_bar">@color/black</color>
+    <color name="bg_parse_progress_bar">@color/samsung_dark</color>
+    <color name="bg_search_from_web">@color/samsung_dark</color>
+    <color name="cardview_background">@color/samsung_dark</color>
+    <color name="container_background">@color/totally_dark</color>
+    <color name="default_font">@color/night_white</color>
+    <color name="font_like_gray">@color/night_white</color>
+    <color name="item_link_btn_layout">@color/samsung_darker</color>
+    <color name="sheet_background">#2a2a2a</color>
+    <color name="subtitle">@color/night_white</color>
+    <color name="tag_bg">@color/aicoin_dark</color>
+    <color name="tag_bg_video_card">@color/aicoin_dark</color>
+    <color name="text_gray">#bec1d2</color>
+    <color name="title">@color/night_white</color>
+    <color name="toolbar_title_color">@color/night_white</color>
+</resources>

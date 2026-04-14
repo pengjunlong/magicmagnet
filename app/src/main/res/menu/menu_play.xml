@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/play_build_in"
+        android:id="@+id/item_play_build_in"
+        android:title="@string/play_build_in"/>
+    <item
+        android:icon="@drawable/play"
+        android:id="@+id/item_mx"
+        android:title="@string/just_play"/>
+    <item
+        android:icon="@drawable/play_build_in"
+        android:id="@+id/item_x5_player"
+        android:visible="false"
+        android:title="X5播放器"/>
+    <item
+        android:icon="@drawable/adm"
+        android:id="@+id/item_adm"
+        android:visible="false"
+        android:title="@string/download_local"/>
+    <item
+        android:icon="@drawable/ic_cast_gray"
+        android:id="@+id/item_dlna"
+        android:title="投屏"/>
+    <item
+        android:icon="@drawable/icon_flud"
+        android:id="@+id/item_save_torrent"
+        android:title="保存种子文件"/>
+    <item
+        android:icon="@drawable/ic_more"
+        android:id="@+id/item_play_other"
+        android:title="更多"/>
+</menu>

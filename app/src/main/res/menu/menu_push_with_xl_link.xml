@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_xiaomi"
+        android:id="@+id/item_push_to_xiaomi_router"
+        android:title="@string/push_to_xiaomi_router"/>
+    <item
+        android:icon="@drawable/icon_xiazaibao"
+        android:id="@+id/item_push_toxiazaobao"
+        android:title="@string/push_to_xiazaibao"/>
+    <item
+        android:icon="@drawable/wky"
+        android:id="@+id/item_push_to_wky"
+        android:title="@string/push_to_wky"/>
+    <item
+        android:icon="@drawable/ic_cloud_torrent"
+        android:id="@+id/item_push_to_cloud_torrent"
+        android:visible="false"
+        android:title="@string/push_to_cloud_torrent"/>
+</menu>

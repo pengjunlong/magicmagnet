@@ -1,0 +1,152 @@
+package com.google.common.collect;
+
+import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
+import com.google.common.annotations.GwtIncompatible;
+import com.google.common.collect.ImmutableSortedSet;
+import com.google.errorprone.annotations.DoNotCall;
+import java.lang.Comparable;
+import java.util.NavigableSet;
+import java.util.SortedSet;
+
+@GwtCompatible(emulated = true)
+@ElementTypesAreNonnullByDefault
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_1.dex */
+public abstract class ContiguousSet<C extends Comparable> extends ImmutableSortedSet<C> {
+    final DiscreteDomain<C> domain;
+
+    ContiguousSet(DiscreteDomain<C> discreteDomain) {
+    }
+
+    @DoNotCall("Always throws UnsupportedOperationException")
+    @Deprecated
+    public static <E> ImmutableSortedSet.Builder<E> builder() {
+    }
+
+    @Beta
+    public static ContiguousSet<Integer> closed(int i, int i2) {
+    }
+
+    @Beta
+    public static ContiguousSet<Integer> closedOpen(int i, int i2) {
+    }
+
+    public static <C extends Comparable> ContiguousSet<C> create(Range<C> range, DiscreteDomain<C> discreteDomain) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet
+    @GwtIncompatible
+    ImmutableSortedSet<C> createDescendingSet() {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet, java.util.SortedSet
+    public /* bridge */ /* synthetic */ ImmutableSortedSet headSet(Object obj) {
+    }
+
+    abstract ContiguousSet<C> headSetImpl(C c, boolean z);
+
+    @Override // com.google.common.collect.ImmutableSortedSet
+    /* bridge */ /* synthetic */ ImmutableSortedSet headSetImpl(Object obj, boolean z) {
+    }
+
+    public abstract ContiguousSet<C> intersection(ContiguousSet<C> contiguousSet);
+
+    public abstract Range<C> range();
+
+    public abstract Range<C> range(BoundType boundType, BoundType boundType2);
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet, java.util.SortedSet
+    public /* bridge */ /* synthetic */ ImmutableSortedSet subSet(Object obj, Object obj2) {
+    }
+
+    abstract ContiguousSet<C> subSetImpl(C c, boolean z, C c2, boolean z2);
+
+    @Override // com.google.common.collect.ImmutableSortedSet
+    /* bridge */ /* synthetic */ ImmutableSortedSet subSetImpl(Object obj, boolean z, Object obj2, boolean z2) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet, java.util.SortedSet
+    public /* bridge */ /* synthetic */ ImmutableSortedSet tailSet(Object obj) {
+    }
+
+    abstract ContiguousSet<C> tailSetImpl(C c, boolean z);
+
+    @Override // com.google.common.collect.ImmutableSortedSet
+    /* bridge */ /* synthetic */ ImmutableSortedSet tailSetImpl(Object obj, boolean z) {
+    }
+
+    @Override // java.util.AbstractCollection
+    public String toString() {
+    }
+
+    @Beta
+    public static ContiguousSet<Long> closed(long j, long j2) {
+    }
+
+    @Beta
+    public static ContiguousSet<Long> closedOpen(long j, long j2) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet
+    @GwtIncompatible
+    public /* bridge */ /* synthetic */ ImmutableSortedSet headSet(Object obj, boolean z) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet
+    @GwtIncompatible
+    public /* bridge */ /* synthetic */ ImmutableSortedSet subSet(Object obj, boolean z, Object obj2, boolean z2) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet
+    @GwtIncompatible
+    public /* bridge */ /* synthetic */ ImmutableSortedSet tailSet(Object obj, boolean z) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet
+    @GwtIncompatible
+    public /* bridge */ /* synthetic */ NavigableSet headSet(Object obj, boolean z) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet
+    @GwtIncompatible
+    public /* bridge */ /* synthetic */ NavigableSet subSet(Object obj, boolean z, Object obj2, boolean z2) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet
+    @GwtIncompatible
+    public /* bridge */ /* synthetic */ NavigableSet tailSet(Object obj, boolean z) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet, java.util.SortedSet
+    public /* bridge */ /* synthetic */ SortedSet headSet(Object obj) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet, java.util.SortedSet
+    public /* bridge */ /* synthetic */ SortedSet subSet(Object obj, Object obj2) {
+    }
+
+    @Override // com.google.common.collect.ImmutableSortedSet, java.util.NavigableSet, java.util.SortedSet
+    public /* bridge */ /* synthetic */ SortedSet tailSet(Object obj) {
+    }
+
+    public ContiguousSet<C> headSet(C c) {
+    }
+
+    public ContiguousSet<C> subSet(C c, C c2) {
+    }
+
+    public ContiguousSet<C> tailSet(C c) {
+    }
+
+    @GwtIncompatible
+    public ContiguousSet<C> headSet(C c, boolean z) {
+    }
+
+    @GwtIncompatible
+    public ContiguousSet<C> tailSet(C c, boolean z) {
+    }
+
+    @GwtIncompatible
+    public ContiguousSet<C> subSet(C c, boolean z, C c2, boolean z2) {
+    }
+}

@@ -1,0 +1,6 @@
+package org.apache.xerces.xni.grammars;
+
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_2.dex */
+public interface XMLDTDDescription extends XMLGrammarDescription {
+    String getRootName();
+}

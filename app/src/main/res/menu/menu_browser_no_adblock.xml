@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_forward"
+        android:title="前进"/>
+    <item
+        android:id="@+id/item_copy_url"
+        android:title="复制网址"/>
+    <item
+        android:id="@+id/item_open_in_browser"
+        android:title="浏览器打开"/>
+    <item
+        android:id="@+id/item_show_bookmark"
+        android:title="书签"/>
+    <item
+        android:id="@+id/item_add_bookmark"
+        android:title="添加书签"/>
+    <item
+        android:id="@+id/item_clear_webview"
+        android:title="清理Cookies和缓存"/>
+    <item
+        android:id="@+id/item_add_search_source"
+        android:title="添加自定义搜索源"/>
+    <item
+        android:id="@+id/item_require_desktop_mode"
+        android:title="桌面版网站"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/item_night_mode"
+        android:checked="false"
+        android:title="网页夜间模式"
+        android:checkable="true"/>
+</menu>

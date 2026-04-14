@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_open_in_browser"
+        android:title="全网搜索"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_search_with_douban"
+        android:title="豆瓣搜索"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_search_film_review"
+        android:title="影评搜索"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_star_film_review"
+        android:id="@+id/item_add"
+        android:title="收藏"
+        app:showAsAction="ifRoom"/>
+</menu>

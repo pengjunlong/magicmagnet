@@ -1,0 +1,19 @@
+package com.google.firebase.crashlytics.internal.settings.model;
+
+import com.google.firebase.crashlytics.internal.common.InstallIdProvider;
+
+/* loaded from: /private/tmp/frida_dump/dex_pulled/00O000ll111l_1.dex */
+public class SettingsRequest {
+    public final String buildVersion;
+    public final String deviceModel;
+    public final String displayVersion;
+    public final String googleAppId;
+    public final InstallIdProvider installIdProvider;
+    public final String instanceId;
+    public final String osBuildVersion;
+    public final String osDisplayVersion;
+    public final int source;
+
+    public SettingsRequest(String str, String str2, String str3, String str4, InstallIdProvider installIdProvider, String str5, String str6, String str7, int i) {
+    }
+}

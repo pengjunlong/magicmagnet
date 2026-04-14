@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/video_download"
+        android:id="@+id/item_download"
+        android:title="下载"/>
+    <item
+        android:icon="@drawable/share"
+        android:id="@+id/item_share"
+        android:title="分享"/>
+    <item
+        android:icon="@drawable/ic_touping_dark"
+        android:id="@+id/item_dlna"
+        android:title="投屏"/>
+</menu>

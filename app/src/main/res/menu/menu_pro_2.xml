@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/register"
+        android:id="@+id/item_regist_pro_code"
+        android:title="M码激活专业版"/>
+    <item
+        android:icon="@drawable/auto"
+        android:id="@+id/item_auto_register"
+        android:title="自助恢复专业版"/>
+    <item
+        android:icon="@drawable/shop"
+        android:id="@+id/item_buy_pro_code"
+        android:title="购买M码"/>
+    <item
+        android:icon="@drawable/details"
+        android:id="@+id/item_pro_detail"
+        android:title="专业版详情"/>
+    <item
+        android:icon="@drawable/contract"
+        android:id="@+id/item_contract_me"
+        android:visible="false"
+        android:title="联系客服"/>
+    <item
+        android:icon="@drawable/pro"
+        android:id="@+id/item_bind_pro_code"
+        android:title="绑定现有专业版"/>
+</menu>

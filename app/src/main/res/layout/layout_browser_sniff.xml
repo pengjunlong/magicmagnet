@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_sniff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/sniff_bar"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/font_like_gray"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:text="嗅探资源"
+            android:maxLines="2"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="14sp"
+            app:autoSizeTextType="none"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

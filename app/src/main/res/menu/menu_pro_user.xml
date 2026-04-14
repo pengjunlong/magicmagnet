@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/details"
+        android:id="@+id/item_pro_detail"
+        android:title="专业版详情"/>
+    <item
+        android:icon="@drawable/contract"
+        android:id="@+id/item_contract_me"
+        android:visible="false"
+        android:title="联系客服"/>
+</menu>
